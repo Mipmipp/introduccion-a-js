@@ -11,7 +11,7 @@ convertirArray();
 function calcularPromedio() {
     let sumaNumeros = 0;
     
-    for(let i = 0; i < (listaNumeros.length); i++) {
+    for(let i = 0; i < listaNumeros.length; i++) {
         sumaNumeros += listaNumeros[i];
     }
     return sumaNumeros / listaNumeros.length;
@@ -19,7 +19,7 @@ function calcularPromedio() {
 
 function encontrarNumeroMenor() {
     let numeroMenor = listaNumeros[0];
-    for(let i = 0; i < (listaNumeros.length); i++) {
+    for(let i = 0; i < listaNumeros.length; i++) {
         if (listaNumeros[i] < numeroMenor) {
             numeroMenor = listaNumeros[i];
         }
@@ -29,7 +29,7 @@ function encontrarNumeroMenor() {
 
 function encontrarNumeroMayor() {
     let numeroMayor = listaNumeros[0];
-    for(let i = 0; i < (listaNumeros.length); i++) {
+    for(let i = 0; i < listaNumeros.length; i++) {
         if (listaNumeros[i] > numeroMayor) {
             numeroMayor = listaNumeros[i];
         }
@@ -39,7 +39,7 @@ function encontrarNumeroMayor() {
 
     function encontrarNumeroRepetido() {
     let numeroRepetido = 0;
-    for(let i = 0; i < (listaNumeros.length); i++) {
+    for(let i = 0; i < listaNumeros.length; i++) {
         for(let j = i + 1; j < listaNumeros.length; j++) {
             if(listaNumeros[i] === listaNumeros[j]) {
                 numeroRepetido = listaNumeros[i]
