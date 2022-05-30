@@ -3,6 +3,7 @@ const listaNumeros = [];
 for(let i = 0; i < (document.querySelectorAll('li').length); i++) {
     listaNumeros.push(Number(document.querySelectorAll('li')[i].innerText));
 }
+
 function calcularPromedio() {
     let sumaNumeros = 0;
     
@@ -11,6 +12,7 @@ function calcularPromedio() {
     }
     return sumaNumeros / listaNumeros.length;
 }
+
 function encontrarNumeroMenor() {
     let numeroMenor = listaNumeros[0];
     for(i = 0; i < (listaNumeros.length); i++) {
@@ -20,6 +22,7 @@ function encontrarNumeroMenor() {
     }
     return numeroMenor
 }
+
 function encontrarNumeroMayor() {
     let numeroMayor = listaNumeros[0];
     for(i = 0; i < (listaNumeros.length); i++) {
@@ -28,6 +31,8 @@ function encontrarNumeroMayor() {
         }
     }
     return numeroMayor;
+}
+
     function encontrarNumeroRepetido() {
     let numeroRepetido = 0;
     for(let i = 0; i < (listaNumeros.length); i++) {
@@ -39,6 +44,7 @@ function encontrarNumeroMayor() {
     }
     return numeroRepetido;
 }
+
 document.querySelector('#promedio').innerText = `El promedio es ${calcularPromedio()}`;
 document.querySelector('#numero-menor').innerText = `El número más pequeño es ${encontrarNumeroMenor()}`;
 document.querySelector('#numero-mayor').innerText = `El número más grande es ${encontrarNumeroMayor()}`;
