@@ -39,3 +39,7 @@ function encontrarNumeroMayor() {
     }
     return numeroRepetido;
 }
+document.querySelector('#promedio').innerText = `El promedio es ${calcularPromedio()}`;
+document.querySelector('#numero-menor').innerText = `El número más pequeño es ${encontrarNumeroMenor()}`;
+document.querySelector('#numero-mayor').innerText = `El número más grande es ${encontrarNumeroMayor()}`;
+document.querySelector('#numero-repetido').innerText = `El número más frecuente es ${encontrarNumeroRepetido()}`;
