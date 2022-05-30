@@ -11,3 +11,12 @@ function calcularPromedio() {
     }
     return sumaNumeros / listaNumeros.length;
 }
+function encontrarNumeroMenor() {
+    let numeroMenor = listaNumeros[0];
+    for(i = 0; i < (listaNumeros.length); i++) {
+        if (listaNumeros[i] < numeroMenor) {
+            numeroMenor = listaNumeros[i];
+        }
+    }
+    return numeroMenor
+}
