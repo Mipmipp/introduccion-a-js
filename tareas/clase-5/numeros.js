@@ -20,3 +20,11 @@ function encontrarNumeroMenor() {
     }
     return numeroMenor
 }
+function encontrarNumeroMayor() {
+    let numeroMayor = listaNumeros[0];
+    for(i = 0; i < (listaNumeros.length); i++) {
+        if (listaNumeros[i] > numeroMayor) {
+            numeroMayor = listaNumeros[i];
+        }
+    }
+    return numeroMayor;
