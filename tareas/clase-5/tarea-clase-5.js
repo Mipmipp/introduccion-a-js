@@ -32,7 +32,8 @@ document.querySelector('#calcular').onclick = function() {
 }
 
 function calcularSalarioMensual(salarioAnual) {
-  return salarioAnual / 12;
+  const CANTIDAD_MESES_DEL_ANIO = 12;
+  return salarioAnual / CANTIDAD_MESES_DEL_ANIO;
 }
 //TAREA: En otro archivo html (no Index) y otro archivo js (no tarea-clase-5.js),
 // creá un formulario que capture el primer nombre, segundo nombre, apellido/s y edad del usuario
