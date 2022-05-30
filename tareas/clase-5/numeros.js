@@ -19,7 +19,7 @@ function calcularPromedio() {
 
 function encontrarNumeroMenor() {
     let numeroMenor = listaNumeros[0];
-    for(i = 0; i < (listaNumeros.length); i++) {
+    for(let i = 0; i < (listaNumeros.length); i++) {
         if (listaNumeros[i] < numeroMenor) {
             numeroMenor = listaNumeros[i];
         }
@@ -29,7 +29,7 @@ function encontrarNumeroMenor() {
 
 function encontrarNumeroMayor() {
     let numeroMayor = listaNumeros[0];
-    for(i = 0; i < (listaNumeros.length); i++) {
+    for(let i = 0; i < (listaNumeros.length); i++) {
         if (listaNumeros[i] > numeroMayor) {
             numeroMayor = listaNumeros[i];
         }
