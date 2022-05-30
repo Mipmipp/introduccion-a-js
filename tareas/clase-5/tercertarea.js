@@ -25,5 +25,9 @@ $calcularTiempoTotal.onclick = function() {
     for(let i=0; i < horas.length; i++) {
         horasTotal += Number(horas[i].value);
     }
+
+    let $tiempoTotal = document.querySelector('#resultado');
+    $tiempoTotal.innerText = `La tiempo total es de ${horasTotal} horas, ${minutosTotal} minutos y ${segundosTotal} segundos`;
+
     return false;
 }
