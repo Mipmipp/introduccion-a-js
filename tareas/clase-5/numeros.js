@@ -6,6 +6,8 @@ function convertirArray() {
     }
 }
 
+convertirArray();
+
 function calcularPromedio() {
     let sumaNumeros = 0;
     
