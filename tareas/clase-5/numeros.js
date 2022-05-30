@@ -28,3 +28,14 @@ function encontrarNumeroMayor() {
         }
     }
     return numeroMayor;
+    function encontrarNumeroRepetido() {
+    let numeroRepetido = 0;
+    for(let i = 0; i < (listaNumeros.length); i++) {
+        for(let j = i + 1; j < listaNumeros.length; j++) {
+            if(listaNumeros[i] === listaNumeros[j]) {
+                numeroRepetido = listaNumeros[i]
+            }
+        }
+    }
+    return numeroRepetido;
+}
