@@ -6,5 +6,6 @@ document.querySelector('#ingresar-información').onclick = function() {
 
     document.querySelector('#información-personal').value = `${primerNombre}, ${segundoNombre}, ${apellido}, ${edad} años.`;
 
+    document.querySelector('#titulo').innerText = `Bienvenido ${primerNombre}!`;
     return false;
 }
