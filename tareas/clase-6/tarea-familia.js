@@ -23,7 +23,7 @@ document.querySelector('#resetear').onclick = function() {
 function borrarIntegrantesAnteriores() {
     const $integrantes = document.querySelectorAll('.integrante');
     for (let i = 0; i < $integrantes.length; i++) {
-        $integrante[i].remove;
+        $integrantes[i].remove();
     }
 }
 
