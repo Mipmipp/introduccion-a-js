@@ -1,4 +1,4 @@
-document.querySelector('#añadir-cantidad-integrantes').onclick = function(event) {
+document.querySelector('#aniadir-cantidad-integrantes').onclick = function(event) {
     const $cantidadIntegrantes = document.querySelector('#cantidad-integrantes');
     const cantidadIntegrantes = Number($cantidadIntegrantes.value);
 
