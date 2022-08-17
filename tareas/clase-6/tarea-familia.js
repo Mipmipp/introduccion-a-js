@@ -1,21 +1,19 @@
 document.querySelector('#aniadir-cantidad-integrantes').onclick = function(event) {
+    event.preventDefault();
     const $cantidadIntegrantes = document.querySelector('#cantidad-integrantes');
     const cantidadIntegrantes = Number($cantidadIntegrantes.value);
 
     borrarIntegrantesAnteriores();
     crearIntegrantes(cantidadIntegrantes);
-
-    event.preventDefault();
 };
 
 document.querySelector('#calcular').onclick = function(event) {
+    event.preventDefault();
     const numeros = obtenerEdadesIntegrantes();
     mostrarEdad('mayor', obtenerMayorNumero(numeros));
     mostrarEdad('menor', obtenerMenorNumero(numeros));
     mostrarEdad('promedio', obtenerPromedio(numeros));
     mostrarResultados();
-
-    event.preventDefault();
 };
 
 document.querySelector('#resetear').onclick = function() {
@@ -71,6 +69,7 @@ function mostrarEdad(tipo, valor) {
 }
 
 function resetear() {
+    event.preventDefault();
     borrarIntegrantesAnteriores();
     ocultarBotonCalculo();
     ocultarResultados();
