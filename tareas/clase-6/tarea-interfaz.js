@@ -1,3 +1,16 @@
+
+function crearInterfaces(cantidadPersonas) {
+    if (cantidadPersonas > 0) {
+        mostrarElemento('#calcular');
+    } else {
+        resetear();
+    }
+
+    for (let i = 0; i < cantidadPersonas; i++) {
+        crearInterfaz(i);
+    }
+};
+
 function crearInterfaz(indice) {
     const $div = document.createElement('div');
     $div.className = 'interfaz';
