@@ -1,3 +1,13 @@
+document.querySelector('#confirmar-cantidad').onclick = function(event) {
+    event.preventDefault();
+
+    const $cantidadPersonas = document.querySelector('#cantidad-personas');
+    const cantidadPersonas = Number($cantidadPersonas.value);
+
+    borrarInterfaces();
+    crearInterfaces(cantidadPersonas);
+};
+
 document.querySelector('#resetear').onclick = resetear;
 
 function crearInterfaces(cantidadPersonas) {
