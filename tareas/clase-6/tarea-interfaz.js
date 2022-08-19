@@ -1,3 +1,19 @@
+function crearInterfaz(indice) {
+    const $div = document.createElement('div');
+    $div.className = 'interfaz';
+
+    const $label = document.createElement('label');
+    $label.textContent = 'El salario del integrante # ' + (indice + 1) + ' es de:'
+    const $input = document.createElement('input');
+    $input.type = 'number';
+
+    $div.appendChild($label);
+    $div.appendChild($input);
+
+    const $interfaces = document.querySelector('#interfaces');
+    $interfaces.appendChild($div);
+};
+
 function obtenerSalarios() {
     const $salarios = document.querySelectorAll('.interfaz input');
     const salarios  = [];
