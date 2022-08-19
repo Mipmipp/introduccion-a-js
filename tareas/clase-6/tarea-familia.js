@@ -13,7 +13,7 @@ document.querySelector('#calcular').onclick = function(event) {
     mostrarEdad('mayor', obtenerMayorNumero(numeros));
     mostrarEdad('menor', obtenerMenorNumero(numeros));
     mostrarEdad('promedio', obtenerPromedio(numeros));
-    mostrarResultados();
+    mostrarElemento('#calculos');
 };
 
 document.querySelector('#resetear').onclick = function() {
@@ -29,7 +29,7 @@ function borrarIntegrantesAnteriores() {
 
 function crearIntegrantes(cantidadIntegrantes) {
     if (cantidadIntegrantes > 0) {
-        mostrarBotonCalculo();
+        mostrarElemento('#calcular'); 
     } else {
         resetear();
     }
@@ -71,8 +71,8 @@ function mostrarEdad(tipo, valor) {
 function resetear() {
     event.preventDefault();
     borrarIntegrantesAnteriores();
-    ocultarBotonCalculo();
-    ocultarResultados();
+    ocultarElemento('#calculos');
+    ocultarElemento('#calcular');
 }
 
 function obtenerMayorNumero(numeros) {
@@ -106,18 +106,10 @@ function obtenerPromedio(numeros) {
     return (acumulador / numeros.length).toFixed(2);
 }
 
-function mostrarBotonCalculo() {
-    document.querySelector('#calcular').className = '';
+function mostrarElemento(elemento) {
+    document.querySelector(elemento).className = '';
 }
 
-function mostrarResultados() {
-    document.querySelector('#calculos').className = '';
-}
-
-function ocultarBotonCalculo() {
-    document.querySelector('#calcular').className = 'oculto';
-}
-
-function ocultarResultados() {
-    document.querySelector('#calculos').className = 'oculto';
+function ocultarElemento(elemento) {
+    document.querySelector(elemento).className = 'oculto';
 }
