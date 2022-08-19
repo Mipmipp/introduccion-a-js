@@ -8,6 +8,18 @@ document.querySelector('#confirmar-cantidad').onclick = function(event) {
     crearInterfaces(cantidadPersonas);
 };
 
+document.querySelector('#calcular').onclick = function(event) {
+    event.preventDefault();
+
+    const salarios = obtenerSalarios();
+    mostrarSalarios('mayorAnual', obtenerMayorSalario(salarios));
+    mostrarSalarios('menorAnual', obtenerMenorsalario(salarios));
+    mostrarSalarios('promedioAnual', obtenerSalarioPromedioAnual(salarios));
+    mostrarSalarios('promedioMensual', obtenerSalarioPromedioMensual(salarios));
+
+    mostrarElemento('#calculos');
+}
+
 document.querySelector('#resetear').onclick = resetear;
 
 function crearInterfaces(cantidadPersonas) {
