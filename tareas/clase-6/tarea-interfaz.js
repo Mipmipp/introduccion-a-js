@@ -11,6 +11,13 @@ function crearInterfaces(cantidadPersonas) {
     }
 };
 
+function borrarInterfaces() {
+    const $interfaces = document.querySelectorAll('.interfaz');
+    for (let i = 0; i < $interfaces.length; i++) {
+        $interfaces[i].remove();
+    }
+};
+
 function crearInterfaz(indice) {
     const $div = document.createElement('div');
     $div.className = 'interfaz';
