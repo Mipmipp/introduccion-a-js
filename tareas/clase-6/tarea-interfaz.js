@@ -1,3 +1,7 @@
+function mostrarSalarios(tipo, valor) {
+    document.querySelector(`#${tipo}-salario`).textContent = valor;
+}
+
 function resetear() {
     borrarInterfaces();
     ocultarElemento('#calculos');
