@@ -1,3 +1,4 @@
+document.querySelector('#resetear').onclick = resetear;
 
 function crearInterfaces(cantidadPersonas) {
     if (cantidadPersonas > 0) {
