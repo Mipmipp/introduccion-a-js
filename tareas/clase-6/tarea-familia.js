@@ -16,9 +16,8 @@ document.querySelector('#calcular').onclick = function(event) {
     mostrarElemento('#calculos');
 };
 
-document.querySelector('#resetear').onclick = function() {
-    resetear();
-}
+document.querySelector('#resetear').onclick = resetear;
+
 
 function borrarIntegrantesAnteriores() {
     const $integrantes = document.querySelectorAll('.integrante');
@@ -69,7 +68,6 @@ function mostrarEdad(tipo, valor) {
 }
 
 function resetear() {
-    event.preventDefault();
     borrarIntegrantesAnteriores();
     ocultarElemento('#calculos');
     ocultarElemento('#calcular');
