@@ -1,3 +1,4 @@
+const MESES_EN_ANIO = 12;
 function obtenerMayorSalario(salarios) {
     let mayorSalario = salarios[0];
     for (let i = 1; i < salarios.length; i++) {
