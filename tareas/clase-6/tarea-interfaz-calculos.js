@@ -1,4 +1,13 @@
 const MESES_EN_ANIO = 12;
+
+function calcularMayorSalarioAnual(salarios) {
+    return obtenerMayorSalario(salarios) * MESES_EN_ANIO;
+}
+
+function calcularMenorSalarioAnual(salarios) {
+    return obtenerMenorsalario(salarios) * MESES_EN_ANIO;
+}
+
 function obtenerMayorSalario(salarios) {
     let mayorSalario = salarios[0];
     for (let i = 1; i < salarios.length; i++) {
@@ -20,7 +29,6 @@ function obtenerMenorsalario(salarios) {
 }
 
 function obtenerSalarioPromedioAnual(salarios) {
-    const MESES_EN_ANIO = 12;
     let acumulador = 0;
     for (let i = 0; i < salarios.length; i++) {
         acumulador += salarios[i];
@@ -29,6 +37,5 @@ function obtenerSalarioPromedioAnual(salarios) {
 }
 
 function obtenerSalarioPromedioMensual(salarios) {
-    const MESES_EN_ANIO = 12;
     return (obtenerSalarioPromedioAnual(salarios) / MESES_EN_ANIO).toFixed(2);
 }
