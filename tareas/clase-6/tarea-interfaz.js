@@ -12,8 +12,8 @@ document.querySelector('#calcular').onclick = function(event) {
     event.preventDefault();
 
     const salarios = obtenerSalarios();
-    mostrarSalarios('mayorAnual', obtenerMayorSalario(salarios));
-    mostrarSalarios('menorAnual', obtenerMenorsalario(salarios));
+    mostrarSalarios('mayorAnual', calcularMayorSalarioAnual(salarios));
+    mostrarSalarios('menorAnual', calcularMenorSalarioAnual(salarios));
     mostrarSalarios('promedioAnual', obtenerSalarioPromedioAnual(salarios));
     mostrarSalarios('promedioMensual', obtenerSalarioPromedioMensual(salarios));
 
